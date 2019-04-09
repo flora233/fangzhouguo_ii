@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1006.0, 615.0 ],
+		"rect" : [ 119.0, 79.0, 1006.0, 664.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,56 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 111.0, 110.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"linecount" : 3,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 111.0, 139.5, 144.0, 49.0 ],
+					"presentation_linecount" : 3,
+					"text" : "01.wav, 02.wav, 03.wav, 04.wav, 05.wav, 06.wav, 07.wav, 08.wav, 09.wav"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 704.0, 195.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 704.0, 230.0, 178.0, 22.0 ],
+					"text" : "r1.mp3, r2.mp3, r3.mp3, r4.mp3"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-143",
 					"maxclass" : "message",
@@ -380,24 +430,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-100",
-					"items" : [ "Macintosh HD:/Users/apple/Downloads/max_patch/reading/英语听力 - Lesson 27 Mrs.smith's living room.mp3", ",", "Macintosh HD:/Users/apple/Downloads/max_patch/reading/英语听力 - Lesson 55 The Sawyer family.mp3", ",", "Macintosh HD:/Users/apple/Downloads/max_patch/reading/英语听力 - Lesson 57 An unusual day.mp3", ",", "Macintosh HD:/Users/apple/Downloads/max_patch/reading/英语听力 - Lesson 73 The way to King Street.mp3" ],
+					"items" : [ "r1.mp3", ",", "r2.mp3", ",", "r3.mp3", ",", "r4.mp3" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 704.0, 297.5, 285.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-101",
-					"maxclass" : "dropfile",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 704.0, 122.0, 228.5, 106.0 ]
 				}
 
 			}
@@ -493,7 +532,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 422.0, 288.5, 66.0, 22.0 ],
-					"text" : "6000."
+					"text" : "8000."
 				}
 
 			}
@@ -655,24 +694,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-63",
-					"items" : [ "Macintosh HD:/Users/apple/Downloads/max_patch/P2_music/70_SlothTrapBeat_01_648.wav", ",", "Macintosh HD:/Users/apple/Downloads/max_patch/P2_music/100_F_PalmMuteCompGtr_01_606.wav", ",", "Macintosh HD:/Users/apple/Downloads/max_patch/P2_music/120_C_SparklerJunoSynth_01_606.wav", ",", "Macintosh HD:/Users/apple/Downloads/max_patch/P2_music/120_DXDrums_04_606.wav", ",", "Macintosh HD:/Users/apple/Downloads/max_patch/P2_music/122_SimpleHouses_01_SP.wav", ",", "Macintosh HD:/Users/apple/Downloads/max_patch/P2_music/124_909ThinRidesLoop_01_SP.wav", ",", "Macintosh HD:/Users/apple/Downloads/max_patch/P2_music/125_C#_RevHouses_01_SP.wav", ",", "Macintosh HD:/Users/apple/Downloads/max_patch/P2_music/127_A_BigLeadSynth_02_SP.wav", ",", "Macintosh HD:/Users/apple/Downloads/max_patch/P2_music/459565__nadia4sound__buildup-loop.wav" ],
+					"items" : [ "01.wav", ",", "02.wav", ",", "03.wav", ",", "04.wav", ",", "05.wav", ",", "06.wav", ",", "07.wav", ",", "08.wav", ",", "09.wav" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 111.0, 226.5, 285.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-62",
-					"maxclass" : "dropfile",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 97.75, 96.0, 193.25, 82.0 ]
 				}
 
 			}
@@ -915,8 +943,16 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-63", 0 ],
+					"midpoints" : [ 395.0, 177.0, 300.0, 177.0, 300.0, 213.0, 207.0, 213.0, 207.0, 222.0, 120.5, 222.0 ],
 					"order" : 1,
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-10", 0 ]
 				}
 
 			}
@@ -940,13 +976,6 @@
 					"destination" : [ "obj-98", 0 ],
 					"order" : 1,
 					"source" : [ "obj-100", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-99", 0 ],
-					"source" : [ "obj-101", 0 ]
 				}
 
 			}
@@ -990,6 +1019,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-100", 0 ],
+					"midpoints" : [ 646.0, 291.0, 713.5, 291.0 ],
 					"source" : [ "obj-108", 0 ]
 				}
 
@@ -1028,6 +1058,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-113", 0 ],
 					"source" : [ "obj-114", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-64", 0 ],
+					"source" : [ "obj-12", 0 ]
 				}
 
 			}
@@ -1104,15 +1141,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 1 ],
-					"source" : [ "obj-61", 0 ]
+					"destination" : [ "obj-99", 0 ],
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-64", 0 ],
-					"source" : [ "obj-62", 0 ]
+					"destination" : [ "obj-9", 1 ],
+					"source" : [ "obj-61", 0 ]
 				}
 
 			}
@@ -1156,13 +1193,22 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-61", 0 ],
+					"midpoints" : [ 266.0, 330.0, 120.5, 330.0 ],
 					"source" : [ "obj-66", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-61", 1 ],
+					"midpoints" : [ 431.5, 363.0, 222.0, 363.0, 222.0, 339.0, 201.5, 339.0 ],
 					"order" : 1,
 					"source" : [ "obj-73", 0 ]
 				}
@@ -1186,6 +1232,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-113", 0 ],
+					"midpoints" : [ 57.5, 441.0, 411.0, 441.0, 411.0, 480.0, 435.5, 480.0 ],
 					"order" : 0,
 					"source" : [ "obj-8", 0 ]
 				}
@@ -1241,6 +1288,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-113", 0 ],
+					"midpoints" : [ 650.5, 480.0, 435.5, 480.0 ],
 					"order" : 1,
 					"source" : [ "obj-93", 0 ]
 				}
